@@ -76,7 +76,7 @@ class QLabelDemo(QWidget):
         label2.linkHovered.connect(self.link_Hovered)
         label4.linkActivated.connect(self.linkClicked)
 
-        # 把按钮添加到布局里
+        # 把布局添加到框架
         self.setLayout(vbox)
         self.setWindowTitle('Qlabel控件演示')
 

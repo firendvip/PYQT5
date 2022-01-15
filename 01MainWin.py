@@ -1,6 +1,5 @@
 import sys  # 系统库
 from PyQt5.QtWidgets import QMainWindow, QApplication  # 创建窗口和程序
-from PyQt5.QtGui import QIcon  # 设置图标
 
 # QtWidgets 是所有QT控件中的基类
 # sys.argv 变量是一个字符串的列表。sys.argv包含了命令行参数的列表
