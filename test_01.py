@@ -37,3 +37,11 @@
 # href在是CSS代码的一种意思是指定超链接目标的URL。
 # 在HTML和JSP页面代码里的作用是标签，其作用是插入一个超链接，
 # “#”是默认当前页面，可以把#换成想跳转的页面。
+
+# lambda 表达式 如果一个函数的函数体仅有 1 行表达式，则该函数就可以用 lambda 表达式来代替。
+def add(x, y):
+    return x+ y
+print(add(3,4))
+
+ass = lambda x,y:x+y # lambda 参数:返回结果
+print(ass(3,4))
