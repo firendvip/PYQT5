@@ -1,21 +1,21 @@
-class A:
-    def __init__(self):
-        print('A')
-
-class B(A):
-    def __init__(self):
-        print('B')
-
-
-class C(A):
-    def __init__(self):
-        super().__init__()
-        print('C')
-
-A1 = A()
-B1 = B()
-print()
-C1 = C()
+# class A:
+#     def __init__(self):
+#         print('A')
+#
+# class B(A):
+#     def __init__(self):
+#         print('B')
+#
+#
+# class C(A):
+#     def __init__(self):
+#         super().__init__()
+#         print('C')
+#
+# A1 = A()
+# B1 = B()
+# print()
+# C1 = C()
 
 #  单例设计模式：
 #  这种类型的设计模式属于创建型模式，它提供了一种创建对象的最佳方式。
