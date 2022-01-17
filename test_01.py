@@ -39,9 +39,10 @@
 # “#”是默认当前页面，可以把#换成想跳转的页面。
 
 # lambda 表达式 如果一个函数的函数体仅有 1 行表达式，则该函数就可以用 lambda 表达式来代替。
-def add(x, y):
-    return x+ y
-print(add(3,4))
+# def add(x, y):
+#     return x+ y
+# print(add(3,4))
+#
+# ass = lambda x,y:x+y # lambda 参数:F(x) (返回结果)
+# print(ass(3,4))
 
-ass = lambda x,y:x+y # lambda 参数:F(x) (返回结果)
-print(ass(3,4))
