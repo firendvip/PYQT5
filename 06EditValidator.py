@@ -42,11 +42,11 @@ class Edit_Validator(QWidget):
 
         # 整数校验器
         intValidator = QIntValidator()
-        intValidator.setRange(1,999) # 左闭右闭
+        intValidator.setRange(1,22) # 左闭右闭
 
         # 设置浮点数校验器
         doubleValidator = QDoubleValidator()
-        doubleValidator.setRange(0.02,1) # 有BUG 上下限无效
+        doubleValidator.setRange(0.01,1) # 有BUG 上下限无效
         # 常规模式显示浮点数,小数点后两位
         doubleValidator.setNotation(QDoubleValidator.StandardNotation)
         doubleValidator.setDecimals(2)

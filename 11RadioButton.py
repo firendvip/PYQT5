@@ -3,15 +3,11 @@
 '''
 
 import sys
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
-
 
 class QRadioButtonDemo(QWidget):
     def __init__(self):
         super(QRadioButtonDemo, self).__init__()
-        self.button2 = None
         self.initUI()
 
     def initUI(self):
@@ -28,6 +24,7 @@ class QRadioButtonDemo(QWidget):
         # 同上
         self.button2 = QRadioButton('单选按钮2')
         self.button2.toggled.connect(self.buttonState)
+
         layout.addWidget(self.button2)
 
         self.setLayout(layout)

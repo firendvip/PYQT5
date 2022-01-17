@@ -13,7 +13,7 @@ class LineEdit_Echo(QWidget):
         # 创建表单布局
         formLayou = QFormLayout()
 
-        # 创建标签
+        # 创建输入框
         normal_Edit = QLineEdit()
         noEcho_Edit = QLineEdit()
         password_Edit = QLineEdit()

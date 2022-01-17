@@ -53,6 +53,7 @@ class QLineEditDemo(QWidget):
 
     def enterPress(self):
         print('已输入值')
+
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     main = QLineEditDemo()

@@ -43,5 +43,5 @@ def add(x, y):
     return x+ y
 print(add(3,4))
 
-ass = lambda x,y:x+y # lambda 参数:返回结果
+ass = lambda x,y:x+y # lambda 参数:F(x) (返回结果)
 print(ass(3,4))

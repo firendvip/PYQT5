@@ -9,9 +9,9 @@ QCheckBox
 
 
 import sys
-from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
+
 
 class QPushButtonDemo(QDialog) :
     def __init__(self):
@@ -50,10 +50,11 @@ class QPushButtonDemo(QDialog) :
         self.button3.setEnabled(False)
         layout.addWidget(self.button3)
 
-        self.button4 = QPushButton('&MyButton')
+        self.button4 = QPushButton('&MyButton')  # atl + 第一个字母
         # .setDefault(True) 设置为默认按钮，按回车之间点击该按钮
         # 默认按钮一个窗口只能有一个
         self.button4.setDefault(True)
+
         self.button4.clicked.connect(lambda:self.whichButton(self.button4))
         layout.addWidget(self.button4)
 
