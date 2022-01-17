@@ -38,17 +38,26 @@ class QInputDialogDemo(QWidget):
         self.button3.clicked.connect(self.getInt)
 
     def getItem(self):
-        items = ('C', 'C++', 'Ruby', 'Python', 'Java')
+        items = ['C', 'C++', 'Ruby', 'Python', 'Java']
+        #  QInputDialog.getItem()静态方法，不用创建实例就可以直接实用
+        # QInputDialog.getItem(对象,窗口标题,提示内容,元组/列表)
+        # 返回：被选中的item 和 Ture/False
         item, ok = QInputDialog.getItem(self, '请选择编程语言', '语言列表', items)
+        print(item)
+        print(ok)
+        # 当用户选中ok键的时候则在对话框里输入item
         if ok and item:
             self.lineEdit1.setText(item)
 
+
     def getText(self):
+        # getText() 弹出文本输入框
         text, ok = QInputDialog.getText(self, '文本输入框', '输入姓名')
         if ok and text:
             self.lineEdit2.setText(text)
 
     def getInt(self):
+        # getInt() 弹出计数器
         num, ok = QInputDialog.getInt(self, '整数输入框', '输入数字')
         if ok and num:
             self.lineEdit3.setText(str(num))
