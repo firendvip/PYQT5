@@ -15,10 +15,12 @@ class ListWidgetDemo(QMainWindow):
 		# 加载数据单个和多个数据
 		self.listwidget.addItem("item1")
 		self.listwidget.addItems(["item2","item3","item4"])
-		# 信号与槽
-		self.listwidget.itemClicked.connect(self.clicked)
+
 		# 设置为中心控件
 		self.setCentralWidget(self.listwidget)
+
+		# 信号与槽
+		self.listwidget.itemClicked.connect(self.clicked)
 
 	def clicked(self,Index):
 		QMessageBox.information(self,"QListWidget","您选择了：" + self.listwidget.item(self.listwidget.row(Index)).text())

@@ -42,8 +42,6 @@ class MyCalendar(QWidget):
         # 链接到槽
         self.cal.clicked.connect(self.showDate)
 
-
-
     def showDate(self, date):
         # label文本设置为选中的日期 # 点击事件选中后的日期
         self.label.setText((self.cal.selectedDate().toString("yyyy-MM-dd dddd")))

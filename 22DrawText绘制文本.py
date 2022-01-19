@@ -40,7 +40,7 @@ class DrawText(QWidget):
         painter.setFont(QFont('SimSun', 25))
         # 填入颜色方案 painter.drawText(绘图区域，对齐方式，绘制对象)
         # event.rect()：当前窗口，Qt.AlignCenter：居中对齐
-        painter.drawText(event.rect(), Qt.AlignCenter, self.text)
+        painter.drawText(event.rect(), Qt.AlignHCenter, self.text)
         # 结束绘图
         painter.end()
 

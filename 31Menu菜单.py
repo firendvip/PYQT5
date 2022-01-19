@@ -2,10 +2,9 @@
 创建和使用菜单
 '''
 
-import sys,math
+import sys
 from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
-from PyQt5.QtCore import *
+
 
 class Menu(QMainWindow) :
     def __init__(self):
@@ -32,6 +31,7 @@ class Menu(QMainWindow) :
         file.addAction(quit)
         # triggered: 菜单的触发事件连接槽
         save.triggered.connect(self.process)
+        quit.triggered.connect(self.process)
 
     def process(self):
         print(self.sender().text())
