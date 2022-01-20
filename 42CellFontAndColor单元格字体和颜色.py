@@ -35,7 +35,7 @@ class CellFontAndColor(QWidget):
         tableWidget.setItem(0,1,newItem2)
 
         newItem3 = QTableWidgetItem('160')
-        newItem3.setFont(QFont('Times',20,QFont.Black))
+        newItem3.setFont(QFont('Times',35,QFont.Black))
         newItem3.setForeground(QBrush(QColor(0,0,255)))
         tableWidget.setItem(0,2,newItem3)
 

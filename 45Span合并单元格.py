@@ -26,7 +26,7 @@ class Span(QWidget):
         newItem = QTableWidgetItem('雷神')
         tableWidget.setItem(0,0,newItem)
         # setSpan(row, col, 要合并的行数(向下合并)，要合并的列数（向右合并））
-        tableWidget.setSpan(0, 0, 3, 1)
+        tableWidget.setSpan(0, 0, 2, 2)
 
         newItem = QTableWidgetItem('男')
         tableWidget.setItem(2,1,newItem)

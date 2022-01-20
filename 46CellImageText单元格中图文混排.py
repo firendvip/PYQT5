@@ -38,7 +38,7 @@ class CellImageText(QWidget):
         # label1.setText('哈哈没有图片？')
         self.tableWidget.setCellWidget(2, 2, label1)
         # 在表格中添加图片
-        newItem = QTableWidgetItem(QIcon('./01.png'),'')
+        newItem = QTableWidgetItem(QIcon('./03.png'),'')
         self.tableWidget.setItem(0,3,newItem)
 
         layout.addWidget(self.tableWidget)

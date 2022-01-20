@@ -48,12 +48,12 @@ class TableWidgetDemo(QWidget):
         tablewidget.resizeRowsToContents()
 
         # tablewidget.horizontalHeader().setVisible(False)
-        # tablewidget.verticalHeader().setVisible(False)
+        tablewidget.verticalHeader().setVisible(False)
         # 设置垂直头的文案
         tablewidget.setVerticalHeaderLabels(["a","b"])
 
         # 隐藏表格线
-        tablewidget.setShowGrid(False)
+        # tablewidget.setShowGrid(False)
 
         self.setLayout(layout)
 

@@ -57,7 +57,7 @@ class ColumnSort(QWidget):
         self.button = QPushButton('排序')
         self.button.clicked.connect(self.order)
 
-        #  设置排序初始为降序
+        #  设置排序初始的初始值
         self.orderType = Qt.DescendingOrder
 
         layout.addWidget(self.button)

@@ -37,10 +37,10 @@ class PlaceControlInCell(QWidget):
         # 创建下拉框
         combox = QComboBox()
         combox.addItem('男')
-        combox.addItem('女')
+        combox.addItems(['女','未知'])
         # QSS Qt StyleSheet
         # combox.setStyleSheet() 设置下拉框样式 类似CSS
-        # margin:3px:编距像素为3px,  QComboBox{}：设置所有的下拉框
+        # margin:3px:边距像素为3px,  QComboBox{}：设置所有的下拉框
         combox.setStyleSheet('QComboBox{margin:3px};')
         # 下拉框放进 0，1 位置
         tableWidget.setCellWidget(0,1,combox)
