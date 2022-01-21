@@ -21,6 +21,7 @@ class TabWidgetDemo(QTabWidget):
         self.addTab(self.tab2, '选项卡2')
         self.addTab(self.tab3, '选项卡3')
 
+        # 执行自己定义的三个函数
         self.tab1UI()
         self.tab2UI()
         self.tab3UI()

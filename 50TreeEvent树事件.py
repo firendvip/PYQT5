@@ -38,13 +38,21 @@ class TreeEvent(QMainWindow):
         # 添加到中心控件
         self.setCentralWidget(self.tree)
 
-    # index 自动传入？当前行的索引号？
-    def onTreeClicked(self, index):
+    def onTreeClicked(self):
         # 获得当前的单击项  current：当前
         item = self.tree.currentItem()
-        print(index.row())
         # item.text(0)： item第0列的值
         print('key=%s,value=%s' % (item.text(0), item.text(1)))
+
+
+
+    # # index 自动传入？当前行的索引号？
+    # def onTreeClicked(self,index):
+    #     # 获得当前的单击项  current：当前
+    #     item = self.tree.currentItem()
+    #     print(index.row())
+    #     # item.text(0)： item第0列的值
+    #     print('key=%s,value=%s' % (item.text(0), item.text(1)))
 
 
 if __name__ == '__main__':
