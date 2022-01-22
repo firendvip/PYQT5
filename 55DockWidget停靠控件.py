@@ -27,7 +27,7 @@ class DockDemo(QMainWindow):
         # 设置单行输入框为中心控件
         self.setCentralWidget(QLineEdit())
         # 默认悬浮状态  如为真，默认悬靠位置则不起作用
-        # self.items.setFloating(True)
+        self.items.setFloating(True)
         # Qt.RightDockWidgetArea ： 停靠区域为右侧
         self.addDockWidget(Qt.LeftDockWidgetArea,self.items)
 

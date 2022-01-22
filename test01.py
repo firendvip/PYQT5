@@ -46,3 +46,13 @@
 # ass = lambda x,y:x+y # lambda 参数:F(x) (返回结果)
 # print(ass(3,4))
 
+# A = [(0,0),(0,1),(0,2)]
+# B = ['Cls','Back']
+# zip(A,B)
+# zip对象不可迭代
+# C = list(zip)
+# print(C)
+# https://blog.csdn.net/benpaodelulu_guajian/article/details/81869462
+# print(list(zip(A,B)),zip(A,B))
+
+print(*(1,2))
