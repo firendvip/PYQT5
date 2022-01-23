@@ -1,11 +1,14 @@
 '''
 为窗口类添加信号
+#  点击事件——发送信号——执行关闭函数
+#  点击事件(信号)———执行槽函数(函数：发送信号)(同时也是信号)——执行槽函数(关闭窗口)
 '''
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 import sys
 
 class WinSignal(QWidget):
+
     button_clicked_signal = pyqtSignal()
 
     def __init__(self):

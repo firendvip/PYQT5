@@ -55,4 +55,44 @@
 # https://blog.csdn.net/benpaodelulu_guajian/article/details/81869462
 # print(list(zip(A,B)),zip(A,B))
 
-print(*(1,2))
+# print(*(1,2))
+
+
+
+
+from functools import partial
+
+
+def multiply(x, y):
+    return x * y
+
+# 假如 multiply这个函数里我们经常要用到 y=2 或 y=3
+
+A = multiply(3, y=2)
+B = multiply(4, y=2)
+C = multiply(5, y=2)
+print(A,B,C)
+
+def multiply(x, y=2):
+    return x * y
+
+def three_times(x,y=3):
+    return multiply(x,y)
+
+print(multiply(2))
+print(three_times(2))
+
+# y=2 不能直接写成2，如写成2，则x=2 ，下面double(3)中 3即为y的值
+double = partial(multiply,y=2 )
+    # def multiply(x,y=2):
+    #     return x*y
+
+print(double(3))
+
+
+# def subtraction(x, y):
+#     return x - y
+#
+# f = partial(subtraction, 4)  # 4 赋给了 x
+# print(f(10))
+# https://blog.csdn.net/qq_33688922/article/details/91890142

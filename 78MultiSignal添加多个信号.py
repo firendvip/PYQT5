@@ -18,7 +18,7 @@ class MultiSignal(QObject):
 
     # 声明一个重载版本的信号，也就是槽函数的参数可以是int和str类型，也可以只有一个str类型的参数
     # [int,str],[str] [] 并不是列表而是代表，可以重载版本的信号，[int,str] or [str]
-    # signal6对象可以发送两个信号 分别对应2个槽
+    # signal6对象可以分别发两个参数对应2个槽
     signal6 = pyqtSignal([int,str],[str])
 
     def __init__(self):
