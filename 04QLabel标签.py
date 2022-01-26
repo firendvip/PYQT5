@@ -92,7 +92,7 @@ if __name__ == '__main__':
     # 窗口实例化
     main = QLabelDemo()
     # 设置图标
-    app.setWindowIcon(QIcon('./01.png'))
+    app.setWindowIcon(QIcon('./HTicon'))
     # 展示窗口
     main.show()
     # 持续监听

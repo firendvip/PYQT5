@@ -15,7 +15,7 @@ class PartialSlotArg(QMainWindow):
         button2 = QPushButton("按钮2")
         x = 20
         y = -123
-        partial
+        # partial
         # partial函数的功能就是：把一个函数的某些参数给固定住，返回一个新的函数，也可以指定所有参数具体的值
         # 见test01
         button1.clicked.connect(partial(self.onButtonClick,10,20))

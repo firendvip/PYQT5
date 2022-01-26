@@ -49,8 +49,8 @@ class ThreadUpdateUI(QDialog):
         # 让整个类运行起来
         self.backend.start()
 
-    def handleDisplay(self,data):
-        self.input.setText(data)
+    def handleDisplay(self,data1):
+        self.input.setText(data1)
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

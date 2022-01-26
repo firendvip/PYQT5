@@ -66,9 +66,9 @@ from functools import partial
 def multiply(x, y):
     return x * y
 
-# 假如 multiply这个函数里我们经常要用到 y=2 或 y=3
+# 假如 multiply这个函数里我们经常要用到 y=2 或 y=3  Y = [DS,S,S,S,S,S]
 
-A = multiply(3, y=2)
+A = multiply(3, 2)
 B = multiply(4, y=2)
 C = multiply(5, y=2)
 print(A,B,C)
@@ -87,7 +87,10 @@ double = partial(multiply,y=2 )
     # def multiply(x,y=2):
     #     return x*y
 
-print(double(3))
+# def double(x,y=2):
+#     return multiply(x,y)
+
+print(double())
 
 
 # def subtraction(x, y):
