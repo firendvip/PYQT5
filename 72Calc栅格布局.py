@@ -3,7 +3,8 @@
 '''
 
 import sys,math
-from PyQt5.QtWidgets import *
+
+from PyQt5.QtWidgets import QWidget, QGridLayout, QPushButton, QApplication
 
 
 class Calc(QWidget) :

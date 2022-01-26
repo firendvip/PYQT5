@@ -1,10 +1,13 @@
 使用 pyinstaller 进行打包
 安装：pip install pyinstaller
-1.把不需要的import 去掉， from xxxxx improt xxxxx 不清楚可以删除掉import，再点导入
-2.打包：pyinstaller -Fw -i xxxxx.png xxx.py
-eg：pyinstaller -Fw -i HTicon.ico 03.py
 
-# 不能是jpg的文件 必须是.ico  且不能改后缀名为ico ,得在网站上转
+1.把不需要的 库 去掉， from xxxxx improt xxxxx， 可以删除掉import，再点一个一个点导入
+2.打包：pyinstaller -Fw -i xxxxx.ico xxx.py
+eg：pyinstaller -Fw -i HTicon.ico 72Calc栅格布局.py
+
+# 不能是jpg的文件 必须是.ico  且不能改后缀名为ico, 得在网站上转, [搜转ico]
+
+# 如果发现图标打包不上，可能是缓存未显示icon，把exe文件拖到桌面或其他地方。
 
 -F 表示生成单个可执行文件
 -w 表示去掉控制台窗口，这在GUI界面时非常有用。不过如果是命令行程序的话那就把这个选项删除吧！
@@ -15,3 +18,4 @@ eg：pyinstaller -Fw -i HTicon.ico 03.py
 Designer上设计基本框架 —— 导出ui转py —— 写槽函数，连信号 —— 其他修修补补  —— 打包生成exe
 
 
+补充：桌面有icon 界面和任务栏没有，目前没有解决该问题

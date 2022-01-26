@@ -9,7 +9,7 @@ from PyQt5.QtWidgets import *
 class WindowPattern(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.resize(500,260)
+        self.setFixedSize(400, 200)
         self.setWindowTitle('设置窗口的样式')
         # Qt.WindowMaximizeButtonHint ：禁止选择 "最小化" 和 "关闭" 按钮。
         # Qt.WindowStaysOnTopHint ：窗口永远在最前端

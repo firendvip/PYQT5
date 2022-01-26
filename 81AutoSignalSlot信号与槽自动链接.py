@@ -11,7 +11,6 @@ import sys
 class AutoSignalSlot(QWidget):
     def __init__(self):
         super(AutoSignalSlot,self).__init__()
-
         self.okButton = QPushButton("ok", self)
         # 设置okButton的 对象为 "okButton"  "okButton" 为控件内部引用的名字 指向 ok功能的按钮
         # 在QtDesigner指定对象名就可以自动生成下面这句代码
